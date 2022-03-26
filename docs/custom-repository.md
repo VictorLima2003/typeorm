@@ -45,7 +45,7 @@ export const UserRepository = dataSource.getRepository(User).extend({
 // user.controller.ts
 export class UserController {
     users() {
-        return UserRepository.findByName("Timber", "Saw")
+        return UserRepository.findOneByName("Timber", "Saw")
     }
 }
 ```
